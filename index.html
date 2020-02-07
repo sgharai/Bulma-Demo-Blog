@@ -14,6 +14,7 @@
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="blog.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="../">
-                        <img src="bulma.png" alt="Logo">
+                <a class="navbar-item" href="#">
+                        <img src="bulma.png" alt="Logo" onclick="goodFunc()">
                     </a>
                 <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -32,11 +33,11 @@
             </div>
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item is-active">
+                    <a href="index.html" class = "navbar-item is-active">
                             Home
                         </a>
-                    <a class="navbar-item">
-                            Examples
+                    <a class="navbar-item" onclick="accessibilityMode()">
+                            Accessibility Mode
                         </a>
                     <a class="navbar-item">
                             Features
@@ -79,7 +80,7 @@
     <section class="hero is-info is-medium is-bold">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h1 class="title blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
+                <h1 class="title blog-title" id="blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
             </div>
         </div>
     </section>
@@ -147,7 +148,7 @@
                 <section class="hero is-info is-bold is-small promo-block">
                     <div class="hero-body">
                         <div class="container">
-                            <h1 class="title">
+                            <h1 class="title" id="small-hero-title">
                                 <i class="fa fa-bell-o"></i> Nemo enim ipsam voluptatem quia.</h1>
                             <span class="tag is-black is-medium is-rounded">
                                     Natus error sit voluptatem
